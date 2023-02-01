@@ -14,5 +14,5 @@ class TagStructureEvent(object):
 
 
 class TagStructureListener(object):
-    	def tagStructureChanged​(event):
+    	def tagStructureChanged(event):
             pass
