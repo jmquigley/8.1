@@ -3,6 +3,7 @@ programming language.
 """
 
 from __future__ import print_function
+import sys
 
 __all__ = [
     "Appendable",
