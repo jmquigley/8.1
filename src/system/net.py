@@ -3,7 +3,7 @@
 The following functions give you access to interact with http services.
 """
 
-from __future__ import print_function
+
 
 __all__ = [
     "getExternalIpAddress",

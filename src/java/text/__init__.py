@@ -1,4 +1,4 @@
-from __future__ import print_function
+
 
 __all__ = [
     "AttributedCharacterIterator",
@@ -50,7 +50,7 @@ class CharacterIterator(object):
         # type: () -> str
         raise NotImplementedError
 
-    def next(self):
+    def __next__(self):
         # type: () -> str
         raise NotImplementedError
 
@@ -104,7 +104,7 @@ class AttributedCharacterIterator(CharacterIterator):
         # type: () -> str
         raise NotImplementedError
 
-    def next(self):
+    def __next__(self):
         # type: () -> str
         raise NotImplementedError
 

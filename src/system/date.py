@@ -3,7 +3,7 @@
 The following functions give you access to test and modify dates.
 """
 
-from __future__ import print_function
+
 
 __all__ = [
     "addDays",
@@ -292,7 +292,7 @@ def format(date, format="yyyy-MM-dd HH:mm:ss"):
     _format = _format.replace("y", "%Y")
     _format = _format.replace("Z", "{:03.0f}00".format(getTimezoneOffset()))
     _format = _format.replace("z", "PDT")
-    return unicode(_date.strftime(_format))
+    return str(_date.strftime(_format))
 
 
 def fromMillis(millis):
@@ -669,7 +669,7 @@ def millisBetween(date_1, date_2):
         dates.
     """
     print(date_2, date_1)
-    return long(1)
+    return int(1)
 
 
 def minutesBetween(date_1, date_2):
@@ -788,7 +788,7 @@ def toMillis(date):
     print(date)
     _date = _now()
     millis = mktime(_date.timetuple()) * 1000 + _date.microsecond // 1000
-    return long(millis)
+    return int(millis)
 
 
 def weeksBetween(date_1, date_2):

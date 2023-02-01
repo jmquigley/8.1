@@ -4,7 +4,7 @@ The following functions allow you to list projects on the Gateway
 through scripting.
 """
 
-from __future__ import print_function
+
 
 __all__ = ["getProjectName", "getProjectNames"]
 

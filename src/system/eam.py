@@ -4,7 +4,7 @@ The following functions give you access to view EAM information from the
 Gateway.
 """
 
-from __future__ import print_function
+
 
 __all__ = ["getGroups", "queryAgentHistory", "queryAgentStatus", "runTask"]
 

@@ -4,7 +4,7 @@ The following functions allow you to interact directly with an OPC UA
 Server.
 """
 
-from __future__ import print_function
+
 
 __all__ = ["addConnection", "callMethod", "removeConnection"]
 

@@ -3,7 +3,7 @@
 The following functions allow you to send to a printer.
 """
 
-from __future__ import print_function
+
 
 __all__ = ["LANDSCAPE", "PORTRAIT", "createImage", "createPrintJob", "printToImage"]
 

@@ -3,7 +3,7 @@
 The following functions give you access to interact with Ignition Tags.
 """
 
-from __future__ import print_function
+
 
 __all__ = [
     "DEFAULT_TIMEOUT_MILLIS",

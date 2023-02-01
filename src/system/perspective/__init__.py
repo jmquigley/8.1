@@ -4,7 +4,7 @@ The following functions offer various ways to interact with a
 Perspective Session from a Python script.
 """
 
-from __future__ import print_function
+
 
 __all__ = [
     "alterDock",
@@ -34,7 +34,7 @@ __all__ = [
     "vibrateDevice",
 ]
 
-import __builtin__ as builtins
+import builtins as builtins
 from typing import Any, Dict, List, Optional, Union
 
 from com.inductiveautomation.ignition.common.gson import JsonObject

@@ -2,7 +2,7 @@
 programming language.
 """
 
-from __future__ import print_function
+
 import sys
 
 __all__ = [
@@ -27,14 +27,14 @@ __all__ = [
 ]
 
 if sys.version_info.major == 2:
-    import __builtin__ as builtins
+    import builtins as builtins
 else:
     import builtins
 
 import time
 from typing import Any, List, Optional, TypeVar, Union
 
-String = Union[str, unicode]
+String = Union[str, str]
 T = TypeVar("T")
 U = TypeVar("U")
 

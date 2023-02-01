@@ -3,7 +3,7 @@
 The following functions assist with running statistical analysis.
 """
 
-from __future__ import print_function
+
 
 __all__ = [
     "geometricMean",
@@ -27,7 +27,7 @@ __all__ = [
     "variance",
 ]
 
-import __builtin__ as builtins
+import builtins as builtins
 from typing import List, Union
 
 from org.apache.commons.math3.exception import DimensionMismatchException

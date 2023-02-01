@@ -4,7 +4,7 @@ The following functions give you access to view and modify data in the
 database.
 """
 
-from __future__ import print_function
+
 
 __all__ = [
     "ARRAY",

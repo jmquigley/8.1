@@ -4,7 +4,7 @@ The following functions give you access to view and interact with the
 Alarm system in Ignition.
 """
 
-from __future__ import print_function
+
 
 __all__ = [
     "acknowledge",

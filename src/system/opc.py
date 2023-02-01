@@ -4,7 +4,7 @@ The following functions allow you to read, write and browser OPC
 servers.
 """
 
-from __future__ import print_function
+
 
 __all__ = [
     "browse",

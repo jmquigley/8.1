@@ -4,7 +4,7 @@ The following functions give you access to read and write through serial
 ports.
 """
 
-from __future__ import print_function
+
 
 __all__ = [
     "BIT_RATE_110",

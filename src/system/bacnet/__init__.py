@@ -4,7 +4,7 @@ The following functions are used with the BACnet driver and a BACnet/IP
 device.
 """
 
-from __future__ import print_function
+
 
 __all__ = [
     "enumerated",

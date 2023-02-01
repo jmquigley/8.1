@@ -4,7 +4,7 @@ The following functions give you access to view and interact with
 datasets.
 """
 
-from __future__ import print_function
+
 
 __all__ = [
     "addColumn",
@@ -39,7 +39,7 @@ from com.inductiveautomation.ignition.common.script.builtin import DatasetUtilit
 from java.lang import String
 from java.util import Date, Locale
 
-ColType = Union[Date, float, int, str, unicode]
+ColType = Union[Date, float, int, str, str]
 
 
 def addColumn(

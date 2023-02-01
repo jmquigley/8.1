@@ -185,7 +185,7 @@ class Version(Object):
     def isFutureVersion(self, arg):
         # type: (Union[Version, String]) -> bool
         cls = type(self)
-        if isinstance(arg, basestring):
+        if isinstance(arg, str):
             that = self.parse(arg)
         elif isinstance(arg, cls):
             that = arg

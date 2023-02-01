@@ -4,7 +4,7 @@ Functions that provide roster manipulation, including adding and remove
 users from a roster.
 """
 
-from __future__ import print_function
+
 
 __all__ = [
     "addUsers",

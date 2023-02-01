@@ -4,7 +4,7 @@ The following functions allow you to open and close windows in the
 client.
 """
 
-from __future__ import print_function
+
 
 __all__ = [
     "centerWindow",

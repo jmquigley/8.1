@@ -147,7 +147,7 @@ class BrowseElement(Object):
 
     def getProperties(self):
         # type: () -> List[BrowseElement.PropertyElement]
-        return self._properties.values()
+        return list(self._properties.values())
 
     def getProperty(self, id_):
         # type: (int) -> BrowseElement.PropertyElement

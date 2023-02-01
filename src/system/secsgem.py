@@ -5,7 +5,7 @@ the SECS/GEM module. Note that the SECS/GEM module must be installed
 before these functions will be accessible.
 """
 
-from __future__ import print_function
+
 
 __all__ = [
     "copyEquipment",
@@ -125,7 +125,7 @@ def enableDisableEquipment(enable, names):
     print(enable)
     for name in names:
         print(name)
-    return [unicode("")]
+    return [str("")]
 
 
 def getResponse(transactionID, equipment, timeout=5, poll=150):

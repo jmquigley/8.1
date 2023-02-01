@@ -1,4 +1,4 @@
-from __future__ import print_function
+
 
 __all__ = [
     "ExclusionStrategy",
@@ -22,7 +22,7 @@ from com.inductiveautomation.ignition.common.gson.stream import JsonReader, Json
 from java.io import Reader, Writer
 from java.lang import Class, Enum, Object, String
 
-Number = Union[float, int, long]
+Number = Union[float, int, int]
 T = TypeVar("T")
 
 

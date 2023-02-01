@@ -3,7 +3,7 @@
 The following functions give you access to read and write to files.
 """
 
-from __future__ import print_function
+
 
 __all__ = [
     "fileExists",
@@ -63,7 +63,7 @@ def getTempFile(extension):
     """
     suffix = ".{}".format(extension)
     with tempfile.NamedTemporaryFile(suffix=suffix) as temp:
-        return unicode(temp.name)
+        return str(temp.name)
 
 
 def openFile(extension=None, defaultLocation=None):
@@ -165,7 +165,7 @@ def readFileAsString(filepath, encoding="UTF-8"):
         The contents of the file as a string.
     """
     with io.open(filepath, "r", encoding=encoding) as f:
-        return unicode(f.read())
+        return str(f.read())
 
 
 def saveFile(

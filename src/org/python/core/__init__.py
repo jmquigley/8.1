@@ -1,4 +1,4 @@
-from __future__ import print_function
+
 
 from copy import PyStringMap
 
@@ -252,7 +252,7 @@ class PyObject(Object):
         # type: () -> PyObject
         pass
 
-    def __nonzero__(self):
+    def __bool__(self):
         # type: () -> PyObject
         pass
 

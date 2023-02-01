@@ -4,7 +4,7 @@ The following functions give you access to view various Gateway and
 Client data, as well as interact with other various systems.
 """
 
-from __future__ import print_function
+
 
 __all__ = [
     "APPLET_FLAG",
@@ -214,7 +214,7 @@ def getClientId():
         A special code representing the Client's Session in a unique
         way.
     """
-    return unicode("F6D410AC")
+    return str("F6D410AC")
 
 
 def getConnectTimeout():
@@ -265,7 +265,7 @@ def getGatewayAddress():
         The address of the Gateway that the client is communicating
         with.
     """
-    return unicode("http://localhost:8088/")
+    return str("http://localhost:8088/")
 
 
 def getGatewayStatus(
@@ -301,7 +301,7 @@ def getGatewayStatus(
     print(
         gatewayAddress, connectTimeoutMillis, socketTimeoutMillis, bypassCertValidation
     )
-    return unicode("RUNNING")
+    return str("RUNNING")
 
 
 def getGlobals():
@@ -337,7 +337,7 @@ def getInactivitySeconds():
         The number of seconds the mouse and keyboard have been inactive
         for this client.
     """
-    return long(0)
+    return int(0)
 
 
 def getLocale():
@@ -429,7 +429,7 @@ def getProperty(propertyName):
     elif propertyName == "user.name":
         ret = getpass.getuser()
 
-    return unicode(ret)
+    return str(ret)
 
 
 def getReadTimeout():
@@ -1000,7 +1000,7 @@ def threadDump():
     Returns:
         The dump of the current running JVM.
     """
-    return unicode("""{0}\n  "version": "{1}"...{2}""").format(
+    return str("""{0}\n  "version": "{1}"...{2}""").format(
         "{", getVersion().toParseableString(), "}"
     )
 

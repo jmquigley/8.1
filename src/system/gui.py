@@ -4,7 +4,7 @@ The following functions allow you to control windows and create popup
 interfaces.
 """
 
-from __future__ import print_function
+
 
 __all__ = [
     "ACCL_CONSTANT",

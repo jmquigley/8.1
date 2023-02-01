@@ -6,7 +6,7 @@ these functions can only be used with User Sources and their interaction
 with Vision Clients.
 """
 
-from __future__ import print_function
+
 
 __all__ = [
     "getRoles",

@@ -4,7 +4,7 @@ utility classes (a string tokenizer, a random-number generator, and a
 bit array).
 """
 
-from __future__ import print_function
+
 
 __all__ = [
     "Calendar",
@@ -193,7 +193,7 @@ class Iterator(object):
         # type: () -> bool
         raise NotImplementedError
 
-    def next(self):
+    def __next__(self):
         # type: () -> E
         raise NotImplementedError
 
@@ -215,7 +215,7 @@ class ListIterator(Iterator):
         # type: () -> bool
         raise NotImplementedError
 
-    def next(self):
+    def __next__(self):
         # type: () -> E
         raise NotImplementedError
 
@@ -627,7 +627,7 @@ class Locale(Object):
             ret += "_{}".format(self.country)
         if self.variant:
             ret += "_{}".format(self.variant)
-        return unicode(ret)
+        return str(ret)
 
     @classproperty
     def CANADA(self):
