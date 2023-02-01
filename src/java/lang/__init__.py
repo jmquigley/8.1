@@ -25,7 +25,11 @@ __all__ = [
     "Throwable",
 ]
 
-import __builtin__ as builtins
+if sys.version_info.major == 2:
+    import __builtin__ as builtins
+else:
+    import builtins
+
 import time
 from typing import Any, List, Optional, TypeVar, Union
 
