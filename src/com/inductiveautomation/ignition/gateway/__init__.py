@@ -1,5 +1,5 @@
 __all__ = [
-    "IgnitionGateway,
+    "IgnitionGateway",
 ]
 
 class IgnitionGateway(object):
