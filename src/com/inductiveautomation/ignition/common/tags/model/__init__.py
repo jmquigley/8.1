@@ -1,10 +1,35 @@
-__all__ = ["TagPath"]
+__all__ = [
+    "TagManager",
+    "TagPath"
+]
 
 from typing import Union
 
 from com.inductiveautomation.ignition.common import Path
 from com.inductiveautomation.ignition.common.config import Property
 from java.lang import String
+
+
+class TagManager(object):
+    _instance = None
+
+    def __new__(cls):
+        if cls._instance is None:
+            cls._instance = super(TagManager, cls).__new__(cls)
+
+        return cls._instance
+
+    def browseAsync(self, tagPath, browseFilter):
+        pass
+
+    def readAsync(self, tagPaths):
+        pass
+
+    def subscribeAsync(self, tagPath, listener):
+        pass
+
+    def unsubscribeAsync(self, tagPath, listener):
+        pass
 
 
 class TagPath(Path):
