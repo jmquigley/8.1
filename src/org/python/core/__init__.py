@@ -1,6 +1,6 @@
 
 
-from copy import PyStringMap
+# from copy import PyStringMap
 
 __all__ = [
     "CodeFlag",
@@ -22,7 +22,7 @@ __all__ = [
     "PySequence",
     "PySequenceList",
     "PyString",
-    "PyStringMap",
+    # "PyStringMap",
     "PyTraceback",
     "PyTuple",
     "PyType",

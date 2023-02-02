@@ -9,7 +9,7 @@ class Gateway(object):
 
     def __new__(cls):
         if cls._instance is None:
-            cls._instance = super(IgnitionGateway, cls).__new__(cls)
+            cls._instance = super(Gateway, cls).__new__(cls)
 
         return cls._instance
 
