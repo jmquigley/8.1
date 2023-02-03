@@ -27,7 +27,7 @@ __all__ = [
 ]
 
 if sys.version_info.major == 2:
-    import builtins as builtins
+    import __builtins__ as builtins
 else:
     import builtins
 
