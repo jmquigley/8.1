@@ -19,16 +19,14 @@ class QualifiedValue(object):
         raise NotImplementedError
 
     def getQuality(self):
-        # type: () -> QualityCode
-        raise NotImplementedError
+        return QualityCode.Good
 
     def getTimestamp(self):
         # type: () -> Date
         raise NotImplementedError
 
     def getValue(self):
-        # type: () -> Object
-        raise NotImplementedError
+        return ""
 
 
 class Quality(object):
